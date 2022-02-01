@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: rgb(174, 142, 226);
+    font-size: 30px;
+}
+
+p {
+    color: rgb(8, 8, 243);
+}
+
+#idsel {
+    color: rgb(9, 209, 209);
+}
+
+.clssel {
+    color: rgb(85, 21, 145);
+}
+  
+.descendant p {
+    color: brown;
+}
+  
+.child > p {
+    color: brown;
+}
+  
+.adjacent + p {
+    color: coral;
+}
+  
+.general ~ p {
+    color: darkgreen;
+}
+  
+.hov:hover {
+    color: red;
+}
+  
+.act:active {
+    color: green;
+}
+  
+.foc:focus {
+    background-color: rgb(247, 247, 37);
+}
+  
+.childselect p:first-child {
+    color: rgb(243, 66, 35);
+}
+  
+.childselect p:last-child {
+    color: rgb(240, 87, 240);
+}
+  
+.childselect p:nth-child(3) {
+    color: purple;
+}
+  
+.childselect p:nth-child(4) {
+    color: green;
+}
+  
+.firstline::first-line {
+    color: greenyellow;
+}
+  
+.firstletter::first-letter {
+    color: red;
+}
+  
+.inp1::before {
+    content: url(https://img.icons8.com/ios-glyphs/30/000000/facebook-messenger.png);
+}
+  
+.inp2::after {
+    content: url(https://img.icons8.com/ios-glyphs/30/000000/snapchat.png);
+}
