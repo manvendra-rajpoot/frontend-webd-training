@@ -1,6 +1,5 @@
 const inputBox = document.querySelector(".inputField input");
 const addBtn = document.querySelector(".inputField button");
-const removeBtn = document.querySelector(".todo span");
 const list = document.querySelector(".todo");
 
 taskList = [];
@@ -18,12 +17,12 @@ inputBox.onkeyup = () => {
 };
 
 function showTasks() {
-    let liTag = "";
-    taskList.forEach((elements, index) => {
-    liTag += "<li>" + elements + "<span onclick = removeTask(" + index + ")>x</span> <li>";
+    let liElement = "";
+    taskList.map((elements, index) => {
+        liElement += "<li>" + elements + "<span onclick = removeTask(" + index + ")>x</span>" + "<li>";
     });
 
-    list.innerHTML = liTag;
+    list.innerHTML = liElement;
     inputBox.value = "";
     addBtn.classList.remove("active");
 

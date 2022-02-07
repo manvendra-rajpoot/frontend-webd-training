@@ -67,7 +67,7 @@ body {
     pointer-events: auto;
 }
   
-.todoContainer todo {
+.todoContainer .todo {
     max-height: 200px;
     overflow-y: auto;
 }
