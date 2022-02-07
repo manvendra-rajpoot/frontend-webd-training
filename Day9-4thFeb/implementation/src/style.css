@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+h3{
+    font-style: oblique;
+    color: rgb(59, 110, 112);
+    text-align: center;
+    margin: 30px;
+}
+
+form{
+    background-color: aliceblue;
+    margin: 50px 100px;
+    padding: 20px 400px;
+}
+
+form > label {
+    padding: 20px 0;
+}
