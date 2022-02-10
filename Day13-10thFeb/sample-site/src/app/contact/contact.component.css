@@ -1,0 +1,11 @@
+.contact{
+    margin: 10px 100px;
+    padding: 50px 100px;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+}
+.btn {
+    display: grid;
+    margin: 10px auto 5px auto;
+    padding: 5px 10px;
+}

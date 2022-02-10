@@ -1,0 +1,11 @@
+<app-navbar></app-navbar>
+
+<router-outlet></router-outlet>
+
+<form action="" #logIn="ngForm" (ngSubmit)="signIn(logIn)">
+    <input type="email" placeholder="Enter email" name="email" email ngModel>
+    <br>
+    <input type="password" placeholder="Enter password" name="password" required ngModel>
+    <br>
+    <button [disabled]="logIn.invalid">Sign In</button>
+</form>
