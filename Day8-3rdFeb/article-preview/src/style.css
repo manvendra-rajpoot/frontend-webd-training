@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    text-align: center;
+    background-color: rgb(241, 237, 230);
+}
+
+.grid {
+    margin: 100px;
+    /* display: grid; */
+    /* grid-template-columns: 50vh 50vh; */
+}
+
+.drawer img{
+    max-width: 100px;
+    height: 100%; 
+    object-fit: cover;
+}
+.drawer{
+
+}
+.description{
+
+}
+h2 {
+    font-family: Manrope;
+    font-weight: 500;
+    color:hsl(217, 19%, 35%)
+}
+
+p {
+    font-family: Manrope;
+    font-weight: 500;
+    color:hsl(214, 17%, 51%)
+}
