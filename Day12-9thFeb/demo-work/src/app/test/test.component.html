@@ -1,0 +1,10 @@
+<span>Test component works!</span>
+<!-- <p>{{getGreet}}</p> -->
+<table>
+    <tr>
+        <th *ngFor="let item of employees[0] | keyvalue">{{item.key}}</th>
+    </tr>
+    <tr *ngFor="let employee of employees">
+        <td *ngFor="let item of employee | keyvalue">{{item.value}}</td>
+    </tr>
+</table>
