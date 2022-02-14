@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="myForm">
+        <div class="description">
+            <header> Learn to code by watching others </header>
+            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p> 
+        </div>
+        <div class="tdForm">
+            <button id="trialBtn"><span id="tryFree">Try it free 7 days</span> then $20/mo. thereafter</button>
+
+            <form action="" #logIn="ngForm" (ngSubmit)="onSubmit(logIn)">
+                <input type="text" placeholder="First Name" name="fName" ngModel minlength="3" #fName="ngModel" required [(ngModel)]="firstName">
+                <small *ngIf=" fName.touched && fName.invalid ng-valid" style="color:red;">Please enter first name of atleast 3 characters</small>
+                <small *ngIf="fName.touched && fName.valid && firstName.length>2" style="color:green;">First name is {{firstName}}</small>
+                
+                <input type="text" placeholder="Last Name" name="lName" ngModel minlength="3" #lName="ngModel" required [(ngModel)]="lastName">
+                <small *ngIf=" lName.touched && lName.invalid ng-valid" style="color:red;">Please enter last name of atleast 3 characters</small>
+                <small *ngIf="lName.touched && lName.valid && lastName.length>2" style="color:green;">Last name is {{lastName}}</small>
+                
+                <input type="email" placeholder="Email Address" name="email" email ngModel #emailAdd="ngModel" required [(ngModel)]="emailAddress">
+                <small *ngIf=" emailAdd.touched && emailAdd.invalid ng-valid" style="color:red;">Please enter valid email</small>
+                <small *ngIf="emailAdd.touched && emailAdd.valid" style="color:green;">Email is {{emailAddress}}</small>
+
+                <input type="password" placeholder="Password" name="password" password ngModel minlength="6"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" #pswd="ngModel" required [(ngModel)]="password">
+                <small *ngIf="pswd.touched && pswd.invalid ng-valid" style="color:red;">Password must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters</small>
+                <small *ngIf="pswd.touched && pswd.valid && password.length>5" style="color:green;">Valid Password</small>
+
+                <button id="submitBtn" [disabled]="logIn.invalid">CLAIM YOUR FREE TRIAL</button>
+
+                <p> By clicking the button, you are agreeing to our <span id="terms">Terms and Services</span></p> 
+            </form>      
+        </div>
+    </div>
+</div>

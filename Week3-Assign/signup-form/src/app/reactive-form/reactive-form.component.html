@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="myForm">
+        <div class="description">
+            <header> Learn to code by watching others </header>
+            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p> 
+        </div>
+        <div class="reactiveForm">
+            <button id="trialBtn"><span id="tryFree">Try it free 7 days</span> then $20/mo. thereafter</button>
+
+            <form action="" [formGroup]="logIn" (ngSubmit)="onSubmit()">
+                <input type="text" placeholder="First Name" name="fName" formControlName="firstName">
+                <small *ngIf=" firstName.invalid && firstName.touched ng-valid" style="color:red;">Please enter first name of atleast 3 characters</small>
+                <small *ngIf="firstName.touched && firstName.valid" style="color:green;">First name is {{logIn.value.firstName}}</small>
+
+                <input type="text" placeholder="Last Name" name="lName" formControlName="lastName">
+                <small *ngIf=" lastName.touched && lastName.invalid ng-valid" style="color:red;">Please enter last name of atleast 3 characters</small>
+                <small *ngIf="lastName.touched && lastName.valid" style="color:green;">Last name is {{logIn.value.lastName}}</small>
+
+                <input type="email" placeholder="Email Address" name="email" formControlName="emailAddress">
+                <small *ngIf=" emailAddress.touched && emailAddress.invalid ng-valid" style="color:red;">Please enter valid email</small>
+                <small *ngIf="emailAddress.touched && emailAddress.valid" style="color:green;">Email is {{logIn.value.emailAddress}}</small>
+            
+                <input type="password" placeholder="Password" name="password" formControlName="password">
+                <small *ngIf="password.touched && password.invalid ng-valid" style="color:red;">Password must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters</small>
+                <small *ngIf="password.touched && password.valid && password.length>5" style="color:green;">Valid Password</small>
+            
+                <button id="submitBtn" [disabled]="logIn.invalid">CLAIM YOUR FREE TRIAL</button>
+
+                <p> By clicking the button, you are agreeing to our <span id="terms">Terms and Services</span></p> 
+            </form>
+        </div>
+    </div>
+</div>
