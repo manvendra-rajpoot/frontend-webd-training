@@ -1,0 +1,15 @@
+.myCounter{
+  display: grid;
+  margin: 10px;
+  padding: 20px;
+}
+button{
+  width: fit-content;
+  padding: 10px;
+  background-color: rgb(196, 156, 235);
+  border: 1px solid rgb(184, 127, 238);
+  border-radius: 15px;
+}
+span{
+  margin-bottom: 5px;
+}
