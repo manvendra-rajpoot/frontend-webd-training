@@ -1,0 +1,10 @@
+<p>test works!</p>
+<button (click)="showUsers()">Show Users</button>
+<div *ngFor="let user of myUsers" style="border: 1px solid gray;">
+    <div *ngFor="let obj of user | keyvalue">
+        <!-- <p *ngIf="obj.key==='name'">{{obj.value}}</p> -->
+        <p>{{obj.key}} : {{obj.value}}</p>
+    </div>
+   
+</div>
+<button (click)="showComments()">Show Comments</button>
