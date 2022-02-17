@@ -1,0 +1,38 @@
+.container{
+    background-color: white;
+    width: 550px;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.section-one{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.content, .action{
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.twitterHandle{
+    color: rgb(109, 109, 109);
+}
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 18px;
+    color: rgb(29, 27, 27);
+    font-weight: 700;
+
+}
+#likeBtn{
+    border: 1px solid rgb(49, 212, 49);
+    background-color: rgb(49, 212, 49);
+}
+#dislikeBtn{
+    border: 1px solid rgb(250, 98, 77);
+    background-color: rgb(250, 98, 77);
+}
