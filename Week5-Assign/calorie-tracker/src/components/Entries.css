@@ -1,0 +1,25 @@
+.entries{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: none;
+    margin: 0;
+    background: linear-gradient(100deg,red,rgb(0, 255, 106));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+hr{
+    border-bottom: 5px ridge rgba(226, 147, 43, 0.685);
+    border-top: none;
+}
+
+.listgroup{
+    width: 60%;
+    margin: auto;
+    background: linear-gradient(100deg,rgb(231, 90, 137),rgb(171, 221, 78));
+    border-radius: 10px;
+}
+
+.listgroup br{
+    background: none;
+}

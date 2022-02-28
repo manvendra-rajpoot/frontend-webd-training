@@ -1,0 +1,18 @@
+.itemlist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: blueviolet;
+    padding: 10px 20px;
+}
+
+.btn-close{
+    width: 50px;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    color: red;
+    background:none;
+}
